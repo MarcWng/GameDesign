@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Map.tscn" type="PackedScene" id=2]
+
+[node name="game" type="Node2D"]
+
+[node name="Player2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 92.6312, -162.64 )
+
+[node name="Camera2D" type="Camera2D" parent="Player2D"]
+position = Vector2( 0.517456, 1.51756 )
+current = true
+zoom = Vector2( 1.2, 1.2 )
+
+[node name="Map" parent="." instance=ExtResource( 2 )]
+
